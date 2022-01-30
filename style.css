@@ -1,0 +1,197 @@
+html, body {
+    width: 100%;
+    height: 100vh; 
+}
+
+body{
+    background: url('img/background.jpg');
+    height: 100vh;
+}
+
+.container-box{
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 0 0 55px black;
+    width: 75%;
+}
+
+
+/*HEADER*/
+header{
+    border-bottom-style: solid;
+}
+
+.header-title p{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.header-task-info-bottom p {
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 5px;
+}
+
+
+
+/*MAIN PART - input, buttons, list*/
+
+main{
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 500px;
+}
+
+/*MAIN PART - add input, button*/
+.form-input-box{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.add-text{
+    border-radius: 5px;
+    height: 60px;
+    border: none;
+    background-color: rgb(241, 241, 241);
+    padding-right: 15px;
+    padding-left: 15px;
+    border: 2px solid blue;
+    float: left;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.add-btn{
+    height: fit-content;
+}
+
+.add-btn .bi{
+    color: rgb(15, 4, 158);
+    font-size: 42px;
+    padding: 0px 10px;
+    background-color: rgb(241, 241, 241);
+}
+
+.add-btn:hover{
+    transform: scale(1.1);
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*MAIN PART - task list*/
+.todo-div{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 15px;
+    overflow-y: scroll; 
+    overflow-x: hidden;
+    height: 78%;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+/*hide scrollbar*/
+
+.todo-div::-webkit-scrollbar{
+   -webkit-appearance: none;
+   appearance: none;
+}
+
+.element{
+    display: inline-flex;
+    height: fit-content;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    width: 100%;
+    right: 0;
+    text-align: center;
+    transition: .2s;
+    padding: 5px 36px;
+    background-color: rgb(241, 241, 241);
+    cursor: pointer;
+    border-radius: 2px;
+    word-wrap: break-word;
+    margin-bottom: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-between;
+
+}
+
+.element:hover{
+    transform: scale(1.1);
+}
+
+li {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 100%;
+    list-style-type: none;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Dongle', sans-serif;
+    font-size: 32px;
+}
+
+
+/* list buttons icon style*/
+.bi {
+    color: rgb(15, 4, 158);
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.check-btn{
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+strike{
+    color: red;
+}
+
+.delete-btn{
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+.clearListBtn {
+    color: rgb(0, 0, 0);
+    border: 2px solid blue;
+    font-size: large;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 5px 20px;
+    background-color: rgb(241, 241, 241); 
+}
+
+.clearListBtn:hover{
+    transform: scale(1.1); 
+}
+
+
+/*FOOTER*/
+footer{
+    border-top-style: solid;
+    margin-top: 20px;
+}
+
+footer p{
+    padding:10px 10px 0px;
+}
+
+footer p a {
+    color: rgb(0, 0, 0);
+}
+
+footer p a:hover{
+    color: rgb(15, 4, 158);
+}
