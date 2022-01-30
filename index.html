@@ -65,8 +65,8 @@
       <main class="form-input-box">
         <!--Add task to TO-DO list-->
         <div class="inputField d-flex flex-row">
-            <input class="add-text" type="text" placeholder="Add new task" >
-            <button class="add-btn button" type="submit" onclick="addElement()">
+            <input id="inputText" class="add-text" type="text" placeholder="Add new task" >
+            <button class="add-btn button" type="submit" onclick="addElement(); ClearFields();">
               <i class="bi bi-plus-square bg-white "></i>
             </button>
         </div>

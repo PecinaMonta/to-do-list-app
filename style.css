@@ -11,7 +11,15 @@ body{
 .container-box{
     border: 3px solid rgb(0, 0, 0);
     box-shadow: 0 0 55px black;
-    width: 75%;
+    width: 50%;
+    height: 75%;
+}
+
+@media only screen and (max-width : 1280px) {
+    .container-box{
+        width: 75%; 
+    }
+    
 }
 
 
@@ -23,8 +31,14 @@ header{
 .header-title p{
     font-family: 'Bebas Neue', cursive;
     font-size: 80px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    
+}
+
+@media only screen and (max-width : 480px) {
+    .header-title p{
+        font-size: 55px;
+    }
 }
 
 .header-task-info-bottom p {
@@ -39,7 +53,7 @@ header{
 main{
     padding-left: 30px;
     padding-right: 30px;
-    height: 500px;
+    height: 100%;
 }
 
 /*MAIN PART - add input, button*/
@@ -181,11 +195,17 @@ strike{
 /*FOOTER*/
 footer{
     border-top-style: solid;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 footer p{
     padding:10px 10px 0px;
+}
+
+@media only screen and (max-width : 480px) {
+    footer p{
+        font-size: 12px;
+    }
 }
 
 footer p a {

@@ -35,7 +35,6 @@ function addElement(){
             document.getElementById("count").innerHTML = countTotal;//count total
             let countRemaining = elements.length;//count remaining
             document.getElementById("remaining_done").innerHTML = countRemaining;//count remaining
-
             show();
             
             
@@ -60,6 +59,9 @@ function strike(index){
     elements[index] = elements[index].replace("<strike>", ""); //remove start tag strike, replace strike with nothing
     elements[index] = elements[index].replace("</strike>", ""); //remove end tag of strike, replace strike with nothing
         {
+
+            
+
             let countRemaining = elements.length;
             document.getElementById("remaining_done").innerHTML = countRemaining;//count remaining
             let countDome = elements.length - elements.length;//count done
@@ -68,6 +70,7 @@ function strike(index){
     }else{//if element dont have strike, then add strike to element
     elements[index] = "<strike>" + elements[index] + "</strike>"; //put element in strike
         {
+        
             let countRemaining = elements.length -1;
             document.getElementById("remaining_done").innerHTML = countRemaining;//count remaining
             let countDome = elements.length - elements.length + 1;//count done
@@ -112,3 +115,8 @@ function clearList(){
     show();
 }
 
+//clear input field after submiting button
+function ClearFields() {
+     document.getElementById("inputText").value = "";
+     show();
+}
