@@ -38,7 +38,11 @@ function addElement(){
             show();
             
             
+        }else{
+            if(document.querySelector(".add-text").value.trim() === ""){
+                alert("Please write valid input");
         }
+    }
 }
 
 //add tasks
@@ -59,8 +63,6 @@ function strike(index){
     elements[index] = elements[index].replace("<strike>", ""); //remove start tag strike, replace strike with nothing
     elements[index] = elements[index].replace("</strike>", ""); //remove end tag of strike, replace strike with nothing
         {
-
-            
 
             let countRemaining = elements.length;
             document.getElementById("remaining_done").innerHTML = countRemaining;//count remaining
@@ -116,7 +118,7 @@ function clearList(){
 }
 
 //clear input field after submiting button
-function ClearFields() {
+function clearFields() {
      document.getElementById("inputText").value = "";
      show();
 }
